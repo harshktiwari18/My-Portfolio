@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kumar Harsh | Portfolio</title>
+  <meta name="description" content="Portfolio of Kumar Harsh, a B.Tech Electronics and Communication Engineering student. Projects, skills and contact details.">
+
+  <!-- Open Graph tags for link previews -->
+  <meta property="og:title" content="Kumar Harsh | Portfolio">
+  <meta property="og:description" content="B.Tech ECE student portfolio - projects, skills, resume and contact.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="data:,">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo">Kumar Harsh<span>.dev</span></a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+          <!-- Dark / Light mode toggle -->
+          <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle dark mode">🌙</button>
+
+          <!-- Hamburger button for mobile -->
+          <button id="hamburgerBtn" class="hamburger-btn" aria-label="Open menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section id="home" class="hero">
+      <div class="hero-content reveal">
+        <img src="WhatsApp Image 2026-03-30 at 00.06.54.jpg" alt="Photo of Kumar Harsh" class="profile-img">
+
+        <h1>Hi, I'm Kumar Harsh</h1>
+
+        <!-- typing effect target -->
+        <h2 class="typing-text">
+          <span id="typedText"></span><span class="cursor">|</span>
+        </h2>
+
+        <p class="hero-desc">
+          I am a final year B.Tech Electronics and Communication Engineering student who enjoys building
+          web applications and solving problems with code. I like turning ideas
+          into working projects and learning new technologies along the way.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="assets/resume.pdf" class="btn btn-primary" download>Download Resume</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT SECTION ===================== -->
+    <section id="about" class="section">
+      <h2 class="section-title reveal">About Me</h2>
+
+      <div class="about-content reveal">
+        <div class="about-text">
+          <p>
+            I am currently pursuing my B.Tech in Electronics and Communication Engineering at
+           Haldia Institute of Technology (2023 - 2027). I have a strong interest
+            in web development and enjoy building things that run in the browser,
+            from small utility scripts to full projects.
+          </p>
+          <p>
+            Outside of coursework, I like to explore new frameworks, contribute
+            to small open source repos and practice data structures and
+            algorithms for placements.
+          </p>
+
+          <ul class="about-details">
+            <li><strong>Degree:</strong> B.Tech in Electronics and Communication Engineering</li>
+            <li><strong>College:</strong> Haldia Institute of Technology</li>
+            <li><strong>Duration:</strong> 2023 - 2027</li>
+            <li><strong>Interests:</strong> Web Development, DSA, Open Source</li>
+            <li><strong>Career Objective:</strong> To work as a software developer
+              in a company where I can keep learning and contribute to
+              meaningful projects.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS SECTION ===================== -->
+    <section id="skills" class="section alt-bg">
+      <h2 class="section-title reveal">Skills</h2>
+
+      <div class="skills-grid reveal">
+
+        <div class="skill-card">
+          <h3>Programming</h3>
+          <ul>
+            <li>Java</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Tools</h3>
+          <ul>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>VS Code</li>
+            <li>Postman</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS SECTION ===================== -->
+    <section id="projects" class="section">
+      <h2 class="section-title reveal">Projects</h2>
+
+      <!-- filter buttons -->
+      <div class="filter-buttons reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="java">Java</button>
+      </div>
+
+      <div class="projects-grid reveal">
+
+        <div class="project-card" data-category="web">
+          <img src="assets/project-images/pnr-checker.jpg" alt="Screenshot of Railway PNR Status Checker project" class="project-img">
+          <div class="project-info">
+            <h3>Railway PNR Status Checker</h3>
+            <p>
+              A web app that lets users enter their PNR number and view the
+              current booking status using a public API. Built to practice
+              working with APIs and handling asynchronous data.
+            </p>
+            <p class="tech-used"><strong>Tech:</strong> HTML, CSS, JavaScript, REST API</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-small" target="_blank" rel="noopener">GitHub</a>
+              <a href="#" class="btn btn-small btn-outline" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="java">
+          <img src="assets/project-images/rainfall-dashboard.jpg" alt="Screenshot of Rainfall Prediction Dashboard project" class="project-img">
+          <div class="project-info">
+            <h3>Rainfall Prediction Dashboard</h3>
+            <p>
+              A dashboard that displays predicted rainfall data for different
+              regions using historical data. Built as a mini project to
+              practice working with data and charts.
+            </p>
+            <p class="tech-used"><strong>Tech:</strong> Java, HTML, CSS, JavaScript</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-small" target="_blank" rel="noopener">GitHub</a>
+              <a href="#" class="btn btn-small btn-outline" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <img src="assets/project-images/task-manager.jpg" alt="Screenshot of Task Manager project" class="project-img">
+          <div class="project-info">
+            <h3>Task Manager</h3>
+            <p>
+              A simple to-do list application where users can add, complete
+              and delete tasks. Tasks are saved in the browser using local
+              storage so they stay after refreshing the page.
+            </p>
+            <p class="tech-used"><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-small" target="_blank" rel="noopener">GitHub</a>
+              <a href="#" class="btn btn-small btn-outline" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== EDUCATION TIMELINE ===================== -->
+    <section id="education" class="section alt-bg">
+      <h2 class="section-title reveal">Education</h2>
+
+      <div class="timeline reveal">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>B.Tech in Electronics and Communication Engineering</h3>
+            <span class="timeline-date">2023 - 2027</span>
+            <p>Haldia Institute of Technology &mdash; CGPA: 8.4 / 10</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Senior Secondary (12th), PCM</h3>
+            <span class="timeline-date">2020 - 2022</span>
+            <p>GOVT. +2 H/S JHARMAHUI  &mdash; 72%</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Secondary School (10th)</h3>
+            <span class="timeline-date">2019 - 2020</span>
+            <p>Mishra's Residential Public School &mdash; 60%</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== CERTIFICATIONS ===================== -->
+    <section id="certifications" class="section">
+      <h2 class="section-title reveal">Certifications</h2>
+
+      <div class="cert-grid reveal">
+        <div class="cert-card">
+          <h3>Java Programming Certification</h3>
+          <p>Completed a certification course covering core and advanced Java concepts.</p>
+        </div>
+
+        <div class="cert-card">
+          <h3>Web Development Bootcamp</h3>
+          <p>Hands-on course covering HTML, CSS, JavaScript and building responsive websites.</p>
+        </div>
+
+        <div class="cert-card">
+          <h3>Python for Data Analysis</h3>
+          <p>Learned data handling and analysis basics using Python and pandas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT SECTION ===================== -->
+    <section id="contact" class="section alt-bg">
+      <h2 class="section-title reveal">Contact Me</h2>
+
+      <div class="contact-wrapper reveal">
+        <form id="contactForm" class="contact-form" novalidate>
+
+          <div class="form-group">
+            <label for="nameInput">Name</label>
+            <input type="text" id="nameInput" name="name" placeholder="Enter your name">
+            <span class="error-msg" id="nameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="emailInput">Email</label>
+            <input type="email" id="emailInput" name="email" placeholder="Enter your email">
+            <span class="error-msg" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="messageInput">Message</label>
+            <textarea id="messageInput" name="message" rows="5" placeholder="Write your message"></textarea>
+            <span class="error-msg" id="messageError"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+
+          <p class="form-success" id="formSuccess"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; <span id="currentYear"></span> Kumar Harsh. All rights reserved.</p>
+
+      <div class="social-links">
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub profile">GitHub</a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn profile">LinkedIn</a>
+        <a href="mailto:k.harsh814131@gmail.com" aria-label="Send email">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top button -->
+  <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">&uarr;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
